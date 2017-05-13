@@ -1,0 +1,7 @@
+version: '2'
+services:
+    test:
+        image: yhemanth/volume_mount
+        volumes:
+            - /Data/etc/knox:/usr/conf/knox
+        command: -c 'cat /usr/conf/knox/knox.conf'
